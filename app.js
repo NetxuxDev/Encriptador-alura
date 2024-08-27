@@ -102,14 +102,19 @@ function desencriptar(texto){
 }
 function limpiar(){
     document.querySelector("#texto-recibido").value = "";
-    
 }
 
 function ocultarTexto(){
     textoIntructivo.classList.add("ocultar");
 }
 
-botonCopiar.addEventListener("click", copiar = () => {
-    var codigo = document.getElementById("texto-leer").textContent;
-    navigator.clipboard.writeText(codigo);
-})
+function copiarTexto(){
+    var codigo = textoMostrado.textContent;
+    alert("Se copio el texto ingresado")
+    navigator.clipboard.writeText(codigo).then(function() {
+        textoMostrado.textContent = "";
+        limpiar();
+    }).catch(function(error) {
+        console.error("Error al copiar el texto: ", error);
+    })
+}
