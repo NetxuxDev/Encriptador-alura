@@ -1,7 +1,7 @@
 
 :root {
     --fondo: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,31,51,1) 24%, rgba(127,147,189,1) 100%);
-    --color-blanco: #f8f8f8
+    --color-blanco: #f8f8f8;
 }
 
 
@@ -12,6 +12,20 @@
 
 body {
     background: var(--fondo)
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    padding: 1.5% 0.5%;
+    gap: 25%;
+    box-sizing: border-box;
+}
+
+.cabecera h1 {
+    color: var(--color-blanco);
+    font-size: 3rem;
+    text-align: center;
 }
 
 .container {
@@ -52,12 +66,20 @@ textarea {
     align-items: center;
     gap: 2%;
     justify-content: center;
+    color: var(--color-blanco);
 }
 
 .botones {
     display: flex;
     justify-content: center;
     gap: 5%;
+}
+
+button {
+    font-size: 1.15rem;
+    border-radius: 0.75rem;
+    border: 1px outset black;
+    padding: 0.8rem 2rem;
 }
 
 .columna-respuesta{
@@ -92,7 +114,15 @@ textarea {
 }
 
 .respuesta_1{
+    font-weight: 550;
+    font-size: 1.5rem;
+    color: var(--color-blanco);
     padding: 5% 2.9%;
+}
+
+.respuesta_2{
+    color: var(--color-blanco);
+    font-size: 1rem;
 }
 
 .btn-copiar {
@@ -105,6 +135,20 @@ textarea {
 
 footer{
     text-align: center;
+    color: var(--color-blanco);
+    font-size: 1.5rem;
 
 }
 
+@media (max-width: 900px) {
+
+    .body{
+        background-color: var(--fondo);
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+}
