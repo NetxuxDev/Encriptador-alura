@@ -1,8 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap');
+
 :root {
     --fondo: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,31,51,1) 24%, rgba(127,147,189,1) 100%);
     --color-blanco: #f8f8f8;
     --color-azul-oscuro: #1a2740;
+    --fuente-principal: "Josefin Sans";
+    --fuente-secundaria: "Montserrat";
 }
 
 
@@ -14,6 +18,10 @@
 body {
     background: var(--fondo);
     box-sizing: border-box;
+}
+
+p {
+    font-family: var(--fuente-secundaria);
 }
 
 .cabecera {
@@ -28,6 +36,7 @@ body {
     color: var(--color-blanco);
     font-size: 3rem;
     text-align: center;
+    font-family: var(--fuente-secundaria);
 }
 
 .container {
@@ -62,6 +71,7 @@ textarea {
     outline: none;
     border: none;
     color: var(--color-blanco);
+    font-family: var(--fuente-secundaria);
 }
 
 .condicion {
@@ -81,8 +91,9 @@ textarea {
 button {
     font-size: 1.15rem;
     border-radius: 0.75rem;
-    border: 1px outset black;
+    border: 0.5px outset var(--color-azul-oscuro);
     padding: 0.8rem 2rem;
+    font-family: var(--fuente-principal);
 }
 
 .columna-respuesta{
@@ -141,6 +152,7 @@ footer{
     color: var(--color-blanco);
     font-size: 1.5rem;
     background-color: var(--color-azul-oscuro);
+    font-family: var(--fuente-secundaria);
 
 }
 
