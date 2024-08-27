@@ -46,6 +46,7 @@ body {
     width: 60%;
     gap: 0.5rem;
     border-radius: 0.6rem;
+    margin: 0 auto;
 
 }
 
@@ -143,6 +144,10 @@ footer{
 
 }
 
+.ocultar {
+    display: none;
+}
+
 @media (max-width: 900px) {
 
     .cabecera {
@@ -235,6 +240,10 @@ footer{
         margin: 0 auto; /* Centra el botón */
         margin-top: 1.5rem;
         display: block;
+    }
+
+    .ocultar {
+        display: none;
     }
 
 

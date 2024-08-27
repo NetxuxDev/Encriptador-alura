@@ -14,27 +14,27 @@
 
     <main class="container">
         <div class="columna-encriptar">
-            <textarea class="text-area" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea class="text-area" name="texto-recibido" id="texto-recibido" placeholder="Ingrese el texto aquí"></textarea>
             <div class="condicion">    
                 <p>Solo letras minúsculas y sin acéntos</p>
             </div>
             <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button onclick="encriptarTexto()" value="encriptarTexto" id="btn-encripta" class="btn-encriptar">Encriptar</button>
+                <button onclick="desencriptaTexto()" value="desencriptarTexto" id="btn-desencripta" class="btn-desencriptar" disabled>Desencriptar</button>
             </div>
         </div>
 
         <div class="columna-respuesta">
-            <textarea class="text-read" name="" id="" cols="1" rows="5" readonly></textarea>
+            <textarea value="tex" class="text-read" name="texto-leer" id="texto-leer" cols="1" rows="5" readonly></textarea>
             <div class="mensaje-respuesta">
                 <img src="imagenes/Muñeco.png" alt="">
                 <p class="respuesta_1">Ningun mensaje encontrado</p>
                 <p class="respuesta_2">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
-                <button class="btn-copiar" style="display: initial;">Copiar</button>
+                <button onclick="" id="btn-copia" class="btn-copiar" disabled>Copiar</button>
         </div>
     </main>
-
+    <script src="app.js"></script>
     <footer>
         <small>
             Desarrollado por NetxuxDev - Adrian Marchan
