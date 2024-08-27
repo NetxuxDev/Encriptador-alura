@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="columna">
-            <textarea  name="" id="">Ingrese el texto aqui</textarea>
-            <p>Ingresa solo minisculas y sin acentos</p>
-            <div>
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+    <header>
+        <img src="imagenes/Logo.png" alt="logo de Alura" class="logo">
+    </header>
+
+    <main class="container">
+        <div class="columna-encriptar">
+            <textarea class="text-area" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="condicion">    
+                <p>Solo letras minúsculas y sin acéntos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
             </div>
         </div>
 
-        <div class="columna1">
-            <div>
-                <img src="" alt="">
-                <textarea name="" id="" readonly></textarea>
+        <div class="columna-respuesta">
+            <textarea class="text-read" name="" id="" cols="1" rows="5" readonly></textarea>
+            <div class="mensaje-respuesta">
+                <img src="imagenes/Muñeco.png" alt="">
+                <p class="respuesta_1">Ningun mensaje encontrado</p>
+                <p class="respuesta_2">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
-            <div>
-                <button>Copiar</button>
-            </div>
+                <button class="btn-copiar" style="display: initial;">Copiar</button>
         </div>
-    </div>
+    </main>
 
     <footer>
         <small>
-            Copyright &#169 2024 NetxuxDev - Adrian Marchan
+            Desarrollado por NetxuxDev - Adrian Marchan
         </small>
     </footer>
 </body>
